@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root {
+    --font1: 'Yellowtail', cursive;
+    --font2: 'Sono', sans-serif;
+    --font3: 'Monoton', cursive;
+    ;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    font-size: 10vw;
+    font-family: var(--font3);
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+
+header p {
+    font-size: 1em;
+    font-family: var(--font2);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+header a:hover,
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+
+
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+section {
+    font-size: 30px;
+    font-family: var(--font1);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 10vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    color: white;
+    background-color: #000000be;
+    box-shadow: inset 6px 6px 13px 0px #0000008f;
+    background-attachment: fixed;
+}
+
+section.imagem>p {
+    text-shadow: 1px 1px 2px #00000050;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px;
+    border-left: 10px;
+    background-color: #0000006a;
+}
+
+section#img01 {
+    background-image: url('d012/imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url('d012/imagens/background002.jpg');
+    background-size: cover;
+}
+
+section p {
+    padding-bottom: 40px;
+}
+
+footer {
+    padding: .8px;
+
+    color: white;
+    background-color: black;
+    text-align: center;
+}
